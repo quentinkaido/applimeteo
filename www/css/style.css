@@ -1,1 +1,77 @@
-/* Empty. Add your own CSS if you like */
+.row-title {
+height:60px;
+line-height:60px;
+text-transform:uppercase;
+background-color:#cb314b;
+-webkit-background-clip:padding;
+-moz-background-clip:padding;
+background-clip:padding-box;
+color:#fff;
+font-size:18px;
+text-align:center;
+font-weight:700;
+}
+
+.row {
+height:60px;
+line-height:60px;
+overflow:hidden;
+background-color:#4f597b;
+border-bottom:1px solid #1f253d;
+color:#fff;
+}
+
+.row .temperature {
+text-align:right;
+padding-right:20px;
+font-size:22px;
+float:right;
+margin-left:40px;
+}
+
+.row .date {
+float:right;
+color:#1f253d;
+text-transform:uppercase;
+font-weight:700;
+}
+
+.row .date strong {
+color:#fff;
+margin-right:5px;
+}
+
+.row span {
+float:left;
+padding-left:20px;
+font-size:35px;
+height:60px;
+line-height:60px;
+margin-right:30px;
+}
+
+.row.row_active {
+height:120px;
+background-color:#e54b65;
+}
+
+.row.row_active .date {
+color:#fff;
+float:left;
+line-height:120px;
+}
+
+.row.row_active .temperature {
+font-size:40px;
+float:left;
+line-height:120px;
+margin-left:15px;
+}
+
+.row.row_active span {
+float:right;
+font-size:50px;
+height:120px;
+line-height:120px;
+margin-right: 20px;
+}

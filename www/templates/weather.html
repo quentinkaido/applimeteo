@@ -1,0 +1,26 @@
+<ion-view view-title="Météo">
+  <ion-content>
+    <section class="panel" ng-hide="panel">
+
+      <div class="row-title">
+        {{weather.city.name}}/{{weather.city.country}}
+      </div>
+
+
+      <div class="row" ng-class="{row_active: $index==0}" ng-repeat="day in weather.list" ng-click="expand($event)">
+        <div class="temperature">{{Math.round(day.temp.day)}}°C</div>
+        <div class="date">
+          <strong>{{day.dt*1000 | date:'EEE'}}</strong>
+          {{day.dt*1000 | date:'dd/MM'}}
+        </div>
+        <span class="icon-{{day.weather[0].main.toLowerCase()}}"></span>
+      </div>
+    </section>
+
+    <div class="footer">
+     <div class="container">
+       <p class="copyright">Copyright © Leroux Quentin 2017. Tout droits réservés.</p>
+     </div>
+   </div>
+  </ion-content>
+</ion-view>
